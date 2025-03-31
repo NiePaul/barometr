@@ -2,17 +2,16 @@ body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .container {
-  width: 90%;
   max-width: 800px;
-  margin: 30px auto;
+  margin: auto;
   background: #fff;
   padding: 20px 30px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 5px;
 }
 
 h1 {
@@ -31,7 +30,7 @@ h1 {
 
 .question label {
   display: block;
-  margin: 5px 0;
+  margin: 8px 0;
   cursor: pointer;
 }
 
