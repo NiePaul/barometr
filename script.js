@@ -3,7 +3,7 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
   
   let totalPoints = 0;
   
-  // Pobierz wszystkie inputy w formularzu
+  // Pobieramy wszystkie inputy (radio i checkbox) w formularzu
   const inputs = document.querySelectorAll("#quizForm input");
   
   inputs.forEach(input => {
@@ -12,7 +12,6 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
     }
   });
   
-  // Określenie komunikatu na podstawie sumy punktów
   let message = "";
   if(totalPoints >= 0 && totalPoints <= 13) {
     message = `<strong>Niska świadomość/praktyki prywatności (0–13 pkt)</strong><br>
