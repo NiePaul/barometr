@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz o Prywatności</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz o Prywatności</h1>
+    <form id="quizForm">
+      <!-- Pytanie 1 -->
+      <div class="question">
+        <p>1. Jakie hasła używasz?</p>
+        <label><input type="radio" name="q1" data-points="0" required> Proste hasło</label>
+        <label><input type="radio" name="q1" data-points="1"> Złożone, ale te same dla wielu kont</label>
+        <label><input type="radio" name="q1" data-points="2"> Unikalne, silne hasło dla każdego konta</label>
+      </div>
+
+      <!-- Pytanie 2 -->
+      <div class="question">
+        <p>2. Jak często zmieniasz swoje hasła?</p>
+        <label><input type="radio" name="q2" data-points="0" required> Nigdy</label>
+        <label><input type="radio" name="q2" data-points="1"> Rzadko, tylko gdy jest to wymagane</label>
+        <label><input type="radio" name="q2" data-points="2"> Regularnie, co kilka miesięcy</label>
+      </div>
+
+      <!-- Pytanie 3 -->
+      <div class="question">
+        <p>3. Czy używasz menedżera haseł?</p>
+        <label><input type="radio" name="q3" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q3" data-points="1"> Używam, ale niesystematycznie</label>
+        <label><input type="radio" name="q3" data-points="2"> Tak, zawsze</label>
+      </div>
+
+      <!-- Pytanie 4 -->
+      <div class="question">
+        <p>4. Czy stosujesz dwuetapową weryfikację na swoich urządzeniach?</p>
+        <label><input type="radio" name="q4" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q4" data-points="1"> Tylko na niektórych urządzeniach</label>
+        <label><input type="radio" name="q4" data-points="2"> Zawsze, gdy to możliwe</label>
+      </div>
+
+      <!-- Pytanie 5 -->
+      <div class="question">
+        <p>5. Jakie narzędzia AI używasz?</p>
+        <label><input type="radio" name="q5" data-points="0" required> Żadnych</label>
+        <label><input type="radio" name="q5" data-points="1"> Tylko popularnych, wbudowanych funkcji</label>
+        <label><input type="radio" name="q5" data-points="2"> Specjalistycznych narzędzi z zaawansowanymi zabezpieczeniami</label>
+      </div>
+
+      <!-- Pytanie 6 -->
+      <div class="question">
+        <p>6. Czy sprawdzasz politykę prywatności używanych narzędzi AI?</p>
+        <label><input type="radio" name="q6" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q6" data-points="1"> Sporadycznie</label>
+        <label><input type="radio" name="q6" data-points="2"> Zawsze przed rozpoczęciem pracy</label>
+      </div>
+
+      <!-- Pytanie 7 -->
+      <div class="question">
+        <p>7. Czy korzystasz z trybu prywatnego, jeśli narzędzie AI go oferuje?</p>
+        <label><input type="radio" name="q7" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q7" data-points="1"> Czasami</label>
+        <label><input type="radio" name="q7" data-points="2"> Zawsze, gdy jest dostępny</label>
+      </div>
+
+      <!-- Pytanie 8 -->
+      <div class="question">
+        <p>8. Jakie media społecznościowe używasz? (Możesz wybrać więcej niż jedną opcję)</p>
+        <label><input type="checkbox" name="q8" data-points="1"> Facebook</label>
+        <label><input type="checkbox" name="q8" data-points="1"> Instagram</label>
+        <label><input type="checkbox" name="q8" data-points="1"> Twitter</label>
+        <label><input type="checkbox" name="q8" data-points="1"> LinkedIn</label>
+        <label><input type="checkbox" name="q8" data-points="0"> TikTok</label>
+        <label><input type="checkbox" name="q8" data-points="0"> Snapchat</label>
+        <label><input type="checkbox" name="q8" data-points="2"> Reddit</label>
+      </div>
+
+      <!-- Pytanie 9 -->
+      <div class="question">
+        <p>9. Czy ustawiasz swoje profile jako prywatne?</p>
+        <label><input type="radio" name="q9" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q9" data-points="1"> Tylko na niektórych platformach</label>
+        <label><input type="radio" name="q9" data-points="2"> Zawsze</label>
+      </div>
+
+      <!-- Pytanie 10 -->
+      <div class="question">
+        <p>10. Czy udostępniasz dane osobowe na swoich profilach?</p>
+        <label><input type="radio" name="q10" data-points="0" required> Tak, bez ograniczeń</label>
+        <label><input type="radio" name="q10" data-points="1"> Tylko wybrane informacje</label>
+        <label><input type="radio" name="q10" data-points="2"> Minimalnie, tylko niezbędne</label>
+      </div>
+
+      <!-- Pytanie 11 -->
+      <div class="question">
+        <p>11. Czy wiesz, jakie dane zbierają poszczególne platformy?</p>
+        <label><input type="radio" name="q11" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q11" data-points="1"> Częściowo</label>
+        <label><input type="radio" name="q11" data-points="2"> Tak, śledzę politykę prywatności</label>
+      </div>
+
+      <!-- Pytanie 12 -->
+      <div class="question">
+        <p>12. Czy używasz pseudonimu lub innej nazwy niż Twoje prawdziwe imię i nazwisko?</p>
+        <label><input type="radio" name="q12" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q12" data-points="1"> Tylko na niektórych platformach</label>
+        <label><input type="radio" name="q12" data-points="2"> Zawsze</label>
+      </div>
+
+      <!-- Pytanie 13 -->
+      <div class="question">
+        <p>13. Czy potrafisz zarządzać ciasteczkami i opcjami śledzenia na platformach?</p>
+        <label><input type="radio" name="q13" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q13" data-points="1"> Znam tylko podstawy</label>
+        <label><input type="radio" name="q13" data-points="2"> Dokładnie</label>
+      </div>
+
+      <!-- Pytanie 14 -->
+      <div class="question">
+        <p>14. Czy korzystasz z VPN przy dostępie do mediów społecznościowych?</p>
+        <label><input type="radio" name="q14" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q14" data-points="1"> Sporadycznie</label>
+        <label><input type="radio" name="q14" data-points="2"> Zawsze</label>
+      </div>
+
+      <!-- Pytanie 15 -->
+      <div class="question">
+        <p>15. Czy monitorujesz swoje udostępniane dane osobowe w mediach społecznościowych?</p>
+        <label><input type="radio" name="q15" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q15" data-points="1"> Rzadko</label>
+        <label><input type="radio" name="q15" data-points="2"> Regularnie</label>
+      </div>
+
+      <!-- Pytanie 16 -->
+      <div class="question">
+        <p>16. Jakie przeglądarki używasz? (Możesz wybrać więcej niż jedną opcję)</p>
+        <label><input type="checkbox" name="q16" data-points="2"> Tor Browser</label>
+        <label><input type="checkbox" name="q16" data-points="2"> Brave</label>
+        <label><input type="checkbox" name="q16" data-points="1"> Mozilla Firefox</label>
+        <label><input type="checkbox" name="q16" data-points="1"> Safari</label>
+        <label><input type="checkbox" name="q16" data-points="0"> Google Chrome</label>
+        <label><input type="checkbox" name="q16" data-points="1"> DuckDuckGo</label>
+      </div>
+
+      <!-- Pytanie 17 -->
+      <div class="question">
+        <p>17. Czy korzystasz z trybu incognito/prywatnego?</p>
+        <label><input type="radio" name="q17" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q17" data-points="1"> Czasami</label>
+        <label><input type="radio" name="q17" data-points="2"> Zawsze, gdy to możliwe</label>
+      </div>
+
+      <!-- Pytanie 18 -->
+      <div class="question">
+        <p>18. Czy masz zainstalowane dodatki ochrony prywatności (np. adblock, anti-tracking)?</p>
+        <label><input type="radio" name="q18" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q18" data-points="1"> Jeden lub dwa</label>
+        <label><input type="radio" name="q18" data-points="2"> Kilka, kompleksowo</label>
+      </div>
+
+      <!-- Pytanie 19 -->
+      <div class="question">
+        <p>19. Czy regularnie aktualizujesz swoją przeglądarkę?</p>
+        <label><input type="radio" name="q19" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q19" data-points="1"> Rzadko</label>
+        <label><input type="radio" name="q19" data-points="2"> Zawsze</label>
+      </div>
+
+      <!-- Pytanie 20 -->
+      <div class="question">
+        <p>20. Czy zmieniasz ustawienia dotyczące ciasteczek?</p>
+        <label><input type="radio" name="q20" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q20" data-points="1"> Czasami</label>
+        <label><input type="radio" name="q20" data-points="2"> Regularnie, dostosowuję ustawienia</label>
+      </div>
+
+      <!-- Pytanie 21 -->
+      <div class="question">
+        <p>21. Czy wyłączasz automatyczne śledzenie reklam?</p>
+        <label><input type="radio" name="q21" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q21" data-points="1"> Czasami</label>
+        <label><input type="radio" name="q21" data-points="2"> Zawsze</label>
+      </div>
+
+      <!-- Pytanie 22 -->
+      <div class="question">
+        <p>22. Czy regularnie czyścisz historię przeglądania oraz ciasteczka?</p>
+        <label><input type="radio" name="q22" data-points="0" required> Nigdy</label>
+        <label><input type="radio" name="q22" data-points="1"> Rzadko</label>
+        <label><input type="radio" name="q22" data-points="2"> Regularnie</label>
+      </div>
+
+      <!-- Pytanie 23 -->
+      <div class="question">
+        <p>23. Czy sprawdzasz ustawienia prywatności po każdej aktualizacji przeglądarki?</p>
+        <label><input type="radio" name="q23" data-points="0" required> Nie</label>
+        <label><input type="radio" name="q23" data-points="1"> Rzadko</label>
+        <label><input type="radio" name="q23" data-points="2"> Zawsze</label>
+      </div>
+
+      <button type="submit">Zobacz wynik</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
